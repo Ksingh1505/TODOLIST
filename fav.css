@@ -1,0 +1,92 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f7fb;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 20px 0;
+  color: #2b619e;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #2b619e;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.task-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.task-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.task-card:hover {
+  transform: translateY(-4px);
+}
+
+.task-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.priority {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+.priority.high { background: #e74c3c; }
+.priority.low { background: #27ae60; }
+
+.actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.remove-btn {
+  background: #c0392b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+.remove-btn:hover { background: #a93226; }
+
+@media (max-width: 600px) {
+  h1 { font-size: 28px; }
+  .remove-btn { font-size: 14px; padding: 8px 12px; }
+}
