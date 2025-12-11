@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #FBEFEF;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 20px 0;
+  color: #2b619e;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #b30b0b;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+form {
+  background: #E8D1C5;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+form input,
+form select,
+form button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  display:block;
+}
+
+form button {
+  background: #F5AFAF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #3973b6;
+}
+
+.task-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.task-card {
+  background: rgb(218, 177, 177);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.task-card:hover {
+  transform: translateY(-4px);
+}
+
+.task-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.priority {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(243, 236, 236);
+}
+.priority.high { background: #e74c3c; }
+.priority.low { background: #27ae60; }
+
+.actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions button {
+  flex: 1;
+  margin: 0 5px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.fav-btn { background: #f39c12; color: white; }
+.delete-btn { background: #c0392b; color: white; }
+
+.fav-btn:hover { background: #d68910; }
+.delete-btn:hover { background: #a93226; }
+
+@media (max-width: 600px) {
+  h1 { font-size: 28px; }
+  form input, form select, form button { font-size: 14px; }
+}
