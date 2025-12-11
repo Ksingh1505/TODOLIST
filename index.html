@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive TODO App</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <h1> TODO App</h1>
+  <div class="container">
+    <!-- Link to Favourites page -->
+    <a href="./fav.html">⭐ Go to Favourites</a>
+
+    <!-- Form for adding tasks -->
+    <form id="todoForm">
+      <input id="task" type="text" placeholder="Enter Task Name" required />
+      <select id="priority" required>
+        <option value="">Select Priority</option>
+        <option value="High">High</option>
+        <option value="Low">Low</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <!-- Task List -->
+    <div class="task-list" id="taskList"></div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
